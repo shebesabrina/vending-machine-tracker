@@ -6,7 +6,7 @@ require 'rails_helper'
 describe 'Visitor show page' do
   it 'should display the snacks and price' do
     owner = Owner.create(name: 'Bob')
-    machine = owner.machines.create(location: 'candy shop')
+    machine = owner.machines.create(location: 'Candy Shop')
     snack = Snack.create(name: 'chips', price: 1.00)
 
     visit machine_path(machine)
